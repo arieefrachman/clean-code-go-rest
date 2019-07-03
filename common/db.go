@@ -13,7 +13,7 @@ type Database struct {
 var DB *gorm.DB
 
 func InitDB() *gorm.DB{
-	db, err := gorm.Open("postgres", "host=myhost port=myport user=gorm dbname=gorm password=mypassword")
+	db, err := gorm.Open("postgres", "host=68.183.179.182 port=5432 user=postgres dbname=udemy password=welcome1,. sslmode=disable")
 
 	if err!= nil{
 		fmt.Println("error while connecting db ", err)
