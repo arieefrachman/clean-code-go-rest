@@ -14,6 +14,7 @@ import (
 func Migrate(db *gorm.DB){
 	db.AutoMigrate(models.ArticleModel{})
 }
+
 func main() {
 	db := common.InitDB()
 	Migrate(db)
